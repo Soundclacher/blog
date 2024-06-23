@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.menu .link {
+    text-decoration: none;
+    color: azure;
+}

@@ -1,5 +1,9 @@
 .header {
-    height: 150px;
+    height: 100px;
     width: 100%;
-    color: aquamarine;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       
 }

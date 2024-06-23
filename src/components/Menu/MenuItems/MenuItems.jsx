@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./MenuItems.module.css";
 
 const MenuItems = () => {
 
     return (
-        <div>
-            <Link to={'/'}>
+        <div className={styles.menu} >
+            <Link className={styles.link} to={'/'}>
                 Home
             </Link>
-            <Link to={'/about'}>
+            <Link className={styles.link} to={'/about'}>
                 About
             </Link>
-            <Link to={'/faq'}>
+            <Link className={styles.link} to={'/faq'}>
                 FAQ
             </Link>        
         </div>
