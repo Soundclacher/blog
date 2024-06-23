@@ -1,0 +1,24 @@
+.postblock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid green;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.postblock .textblock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: bisque;
+    cursor: pointer;
+    border: 0;
+    height: 25px;
+    
+}
+

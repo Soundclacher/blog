@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./PostList.module.css";
+import PostPreview from "../PostPreview/PostPreview";
 
 let date = new Date();
 
@@ -26,18 +27,9 @@ const PostList = () => {
 
 
     return (
-        list.map((item) => {
-            return (
-                <div key={item.id}
-                    className={styles.postblock}
-                >
-                    <div className={styles.textblock}>
-                        <p>{item.title}</p>
-                        <span>{item.time}</span>
-                    </div>
-                    <button className={styles.btn}>Remove</button>
-                </div>
-            )
+       
+        list.map((item, index) => {
+            return <PostPreview post={item} key={index} />;          
         })
     );
 }

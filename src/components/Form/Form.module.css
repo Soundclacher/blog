@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+    
+}
+
+.form .title {
+    width: 500px;
+    border: 2px solid blanchedalmond;
+    border-radius: 5px;
+}
+
+.form .text {
+    width: 500px;
+    height: 150px;
+    border: 2px solid blanchedalmond;
+    border-radius: 5px;
+}
