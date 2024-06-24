@@ -9,10 +9,14 @@ const PostList = (props) => {
 
 
     return (
-       
-        props.posts.map((item, index) => {
-            return <PostPreview post={item} key={index} setPosts={props.setPosts}/>;          
-        })
+        <>
+            {(props.posts.length) > 0 ? props.posts.map((item, index) => {
+                return <PostPreview post={item} key={index} setPosts={props.setPosts} />;
+            }) : <div>
+                    <h1 className={styles.report} >Посты не найдены</h1>
+                </div>}
+        </>
+
     );
 }
 

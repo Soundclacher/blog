@@ -17,7 +17,6 @@ const Form = (props) => {
         } else  {
             alert('Введите заголовок и текст поста');
         }
-        console.log({title, text, time: new Date().toLocaleTimeString()});
     }
 
     return (

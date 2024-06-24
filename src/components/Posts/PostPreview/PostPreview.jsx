@@ -4,7 +4,7 @@ import styles from './PostPreview.module.css';
 const PostPreview = (props) => {
 
     function deleteHandler()  {
-        props.setPosts(prev => [...prev.filter(item => item.id != props.post.id)])
+        props.setPosts(prev => [...prev.filter(item => item.id !== props.post.id)])
     }
 
     return (
@@ -15,6 +15,7 @@ const PostPreview = (props) => {
             className={styles.textblock}
             >
                 <p>{props.post.title}</p>
+                <p>{props.post.text}</p>
                 <span>{props.post.time}</span>
             </div>
             <button
