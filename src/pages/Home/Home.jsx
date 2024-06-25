@@ -9,6 +9,7 @@ import styles from './Home.module.css';
 const Home = () => {
 
     const [posts, setPosts] = useState([]);
+    
     const [filteredPosts, setFilteredPosts] = useState(posts);
 
     const [sortSelect, setSortSelect] = useState('');
