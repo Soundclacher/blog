@@ -5,7 +5,6 @@ const Select = ({options, defaultValue, value, onChange}) => {
     return (
         <>
             <select 
-                style={{marginTop: '15px'}}
                 value={value}
                 onChange={event => onChange(event.target.value)}
 
